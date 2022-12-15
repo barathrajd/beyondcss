@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-size: 1.75rem;
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  color: #201e1f;
+  background: #f8f7f7;
+  /* this is being used to center the content on the screen */
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+
+.card {
+  display: grid;
+  gap: 0.75em;
+  width: min(90%, 60rem);
+  padding: 2em;
+  border-radius: 4px;
+  box-shadow: 0 0 15px 0 #201e1f;
+}
+.card__title {
+  color: #da3f0b;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  border-radius: 4px;
+  outline: 2px solid #da3f0b;
+}
+.btn--primary {
+  color: #f8f7f7;
+  background: #da3f0b;
+}
+.btn--outline {
+  color: #da3f0b;
+  background: #f8f7f7;
+}
+.btn:hover, .btn:focus {
+  color: #f8f7f7;
+  background: #201e1f;
+  outline: 2px solid #201e1f;
+  box-shadow: 0 0 20px 0 #da3f0b;
+}
+
+.flex-group {
+  display: flex;
+  gap: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */

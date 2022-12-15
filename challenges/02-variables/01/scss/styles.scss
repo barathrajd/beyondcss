@@ -1,0 +1,65 @@
+$clr-white: #f8f7f7;
+$clr-black: #201e1f;
+$clr-red: #da3f0b;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-size: 1.75rem;
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  color: $clr-black;
+  background: $clr-white;
+
+  /* this is being used to center the content on the screen */
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+
+.card {
+  display: grid;
+  gap: 0.75em;
+  width: min(90%, 60rem);
+  padding: 2em;
+  border-radius: 4px;
+  box-shadow: 0 0 15px 0 rgba($color: $clr-black, $alpha: 1);
+
+  &__title {
+    color: $clr-red;
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  border-radius: 4px;
+  outline: 2px solid $clr-red;
+
+  &--primary {
+    color: $clr-white;
+    background: $clr-red;
+  }
+
+  &--outline {
+    color: $clr-red;
+    background: $clr-white;
+  }
+
+  &:hover,
+  &:focus {
+    color: $clr-white;
+    background: $clr-black;
+    outline: 2px solid $clr-black;
+    box-shadow: 0 0 20px 0 rgba($color: $clr-red, $alpha: 1);
+  }
+}
+
+.flex-group {
+  display: flex;
+  gap: 1rem;
+}
