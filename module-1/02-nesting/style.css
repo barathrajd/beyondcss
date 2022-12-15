@@ -13,4 +13,11 @@
   text-decoration: none;
 }
 
+.nav-link {
+  font-size: 1rem;
+}
+footer .nav-link {
+  font-size: 0.925rem;
+}
+
 /*# sourceMappingURL=style.css.map */
